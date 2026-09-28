@@ -1,9 +1,25 @@
 # Advanced Static Cartography
 
-R has become a powerful environment not only for spatial analysis but also for producing high-quality maps. While many introductory courses focus on basic choropleths and simple map layouts, advanced cartography requires more sophisticated techniques to effectively communicate complex spatial patterns.
-This course focuses on advanced static cartographic techniques in R, using the tmap package as the central mapping framework. You will learn how to design expressive and publication-quality thematic maps by combining tmap with specialized extensions and supporting packages.
-Key topics include advanced visualization techniques such as bivariate choropleths, glyph maps, grid maps, cartograms, and network maps. The course also covers cartographic design principles, including the selection of effective and color-blind friendly color palettes, choosing appropriate basemaps, and designing insets such as inset maps, inset charts, and fully customized inset elements.
-By the end of the course, you will be able to design clear, visually compelling, publication-quality maps that communicate complex spatial information effectively.
+Go beyond basic choropleths: learn to make publication-quality static maps in R that communicate complex spatial patterns.
+
+This course uses **tmap** as the central mapping framework, combined with specialized extensions and supporting packages.
+
+**Map types**
+
+- Bivariate choropleths and multivariate maps
+- Glyph maps (donut maps, flower maps) with **tmap.glyphs**
+- Grid maps with **geofacet** and **gridmappr**
+- Cartograms (contiguous, non-contiguous, Dorling) with **tmap.cartogram**
+- Network maps with **sfnetworks** and **tmap.networks**
+
+**Cartographic design**
+
+- Effective, color-blind friendly color palettes with **cols4all**
+- Insets: inset maps, inset charts and custom elements
+- Choosing appropriate basemaps
+- Visual hierarchy and final map polish
+
+By the end of the course, you will be able to design clear, visually compelling maps that are ready for publication.
 
 ### Course URLs
 
