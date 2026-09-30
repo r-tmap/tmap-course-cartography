@@ -49,10 +49,10 @@ Day 1 (Wednesday 30th of September)
 
 1. Introduction and overview  [Slides](https://10mapz.com/tmap_course_cartography/session_01_intro.html)
 2. Designing effective thematic maps [Slides](https://10mapz.com/tmap_course_cartography/session_02_design.html)
-3. Color palettes <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_03_colors.html) -->
-4. Bivariate choropleths and multivariate mapping <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_04_bivariate.html) -->
+3. Color palettes [Slides](https://10mapz.com/tmap_course_cartography/session_03_colors.html)
+4. Bivariate choropleths and multivariate mapping [Slides](https://10mapz.com/tmap_course_cartography/session_04_bivariate.html)
 
-<!-- [Day 1 exercises](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day1.html) -->
+[Day 1 exercises](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day1.html)
 <!-- [Day 1 solutions](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day1_solutions.html) -->
 
 Day 2 (Thursday 1st of October)
