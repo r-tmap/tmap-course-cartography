@@ -47,8 +47,8 @@ By the end of the course, you will be able to design clear, visually compelling 
 
 Day 1 (Wednesday 30th of September)
 
-1. Introduction and overview <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_01_intro.html) -->
-2. Designing effective thematic maps <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_02_design.html) -->
+1. Introduction and overview  [Slides](https://10mapz.com/tmap_course_cartography/session_01_intro.html)
+2. Designing effective thematic maps [Slides](https://10mapz.com/tmap_course_cartography/session_02_design.html)
 3. Color palettes <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_03_colors.html) -->
 4. Bivariate choropleths and multivariate mapping <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_04_bivariate.html) -->
 
