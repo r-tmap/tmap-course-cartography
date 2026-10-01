@@ -53,12 +53,12 @@ Day 1 (Wednesday 30th of September)
 4. Bivariate choropleths and multivariate mapping [Slides](https://10mapz.com/tmap_course_cartography/session_04_bivariate.html)
 
 [Day 1 exercises](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day1.html)
-<!-- [Day 1 solutions](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day1_solutions.html) -->
+[Day 1 solutions](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day1_solutions.html)
 
 Day 2 (Thursday 1st of October)
 
 5. Review of exercises
-6. Glyph maps <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_06_glyphs.html) -->
+6. Glyph maps [Slides](https://10mapz.com/tmap_course_cartography/session_06_glyphs.html)
 7. Grid maps <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_07_gridmaps.html) -->
 8. Cartograms <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_08_cartograms.html) -->
 
