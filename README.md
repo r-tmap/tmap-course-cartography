@@ -59,10 +59,10 @@ Day 2 (Thursday 1st of October)
 
 5. Review of exercises
 6. Glyph maps [Slides](https://10mapz.com/tmap_course_cartography/session_06_glyphs.html)
-7. Grid maps <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_07_gridmaps.html) -->
-8. Cartograms <!-- [Slides](https://10mapz.com/tmap_course_cartography/session_08_cartograms.html) -->
+7. Grid maps [Slides](https://10mapz.com/tmap_course_cartography/session_07_gridmaps.html)
+8. Cartograms [Slides](https://10mapz.com/tmap_course_cartography/session_08_cartograms.html)
 
-<!-- [Day 2 exercises](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day2.html) -->
+[Day 2 exercises](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day2.html)
 <!-- [Day 2 solutions](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day2_solutions.html) -->
 
 Day 3 (Friday 2nd of October)
