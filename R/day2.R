@@ -11,7 +11,7 @@ tm_shape(World) +
 	tm_polygons(
 		fill = c("gender", "inequality"))
 
-
+# to illustrate multiple map values:
 tm_shape(World) +
 	tm_polygons(
 		fill = c("blue", "#F4DD44"))
@@ -22,6 +22,7 @@ tm_shape(World) +
 		col = c("purple", "orange"),
 		lwd = 3)
 
+# three data variables (albeit the same variable) -> three maps, each with a different scale function
 NLD_muni$pop_dens = NLD_muni$population / NLD_muni$area
 tm_shape(NLD_muni) +
 tm_polygons(
@@ -32,6 +33,7 @@ tm_polygons(
 	fill.legend = tm_legend("Population per km2")) +
 	tm_layout(panel.labels = c("pretty", "kmeans", "log10_pretty"))
 
+# one data variable -> just one map
 tm_shape(NLD_muni) +
 	tm_polygons(
 		fill = "pop_dens",
@@ -76,7 +78,8 @@ tm2 = tm_shape(NLD_muni) +
 
 tmap_save(tm2, filename = "small_mult2.pdf", width = 10, height = 2)
 
-
+# not a good map from a methodological point of view (color perception is tricky)
+# aim is to show to options to use multiple map variables in the same map
 tm_shape(World) +
 	tm_polygons(
 		fill = "gender",
@@ -127,8 +130,12 @@ c4a_plot("brewer.qualseq", n = 3)          # sequential x categorical
 c4a_plot("cols4all.bu_br_bivd", n = 5)     # sequential x diverging
 c4a_plot("cols4all.yl_rd_bivg", n = 5)     # sequential x desaturation
 
+# bivariate map
 tm_shape(World) +
 	tm_polygons(
 		fill = tm_vars(c("gender", "inequality"), multivariate = TRUE),
-		fill.scale = tm_scale_bivariate(values = "+bu_br_bivs")) +
+		fill.scale = tm_scale_bivariate(values = "bu_br_bivs")) +
 	tm_crs("auto")
+
+# url to donut map
+# https://dashboards.cbs.nl/v1/commutingNL/
