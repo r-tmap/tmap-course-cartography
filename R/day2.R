@@ -139,3 +139,96 @@ tm_shape(World) +
 
 # url to donut map
 # https://dashboards.cbs.nl/v1/commutingNL/
+
+
+## session 7 grid maps
+
+library(geofacet)
+nl_prov_grid1
+
+tm_shape(NLD_prov) +
+	tm_polygons() +
+	tm_text("name")
+
+setequal(nl_prov_grid1$name, NLD_prov$name)
+
+setdiff(nl_prov_grid1$name, NLD_prov$name)
+setdiff(nl_prov_grid1$name, NLD_prov$name)
+nl_prov_grid1$name[nl_prov_grid1$name == "Friesland"] = "Fryslan"
+setequal(nl_prov_grid1$name, NLD_prov$name)
+
+data(NLD_prov)
+NLD_prov = cbind(NLD_prov,
+				 nl_prov_grid1[match(NLD_prov$name, nl_prov_grid1$name), ])
+
+tm_shape(NLD_prov)
+
+tm1 = tm_shape(NLD_prov) +
+	tm_polygons() +
+	tm_facets_grid(rows = "row", columns = "col")
+
+tm2 = qtm(NLD_prov)
+
+tmap_arrange(tm1, tm2)
+
+# session 8: cartograms
+tm_shape(World) +
+	tm_polygons() +
+	tm_grid()
+
+tm_shape(World, crs = 4326) +
+	tm_polygons()
+
+tm_shape(World, crs = 3857) +
+	tm_polygons()
+
+tm_shape(World, crs = 3857) +
+	tm_cartogram_ncont(size = "*area", options = opt_tm_cartogram_ncont(expansion = 0.15)) +
+	tm_animate_fast(play = "pingpong")
+
+
+tm_shape(World, crs = 3857) +
+	tm_cartogram_ncont(size = "pop_est", options = opt_tm_cartogram_ncont(expansion = 0.15), fill = "gender")
+
+Africa = World[World$continent == "Africa", ]
+
+tm_shape(Africa, crs = "+proj=robin") +   # correct
+	tm_cartogram(size = "pop_est") +
+	tm_text("name", options = opt_tm_text(remove_overlap = TRUE))
+
+tm_shape(Africa) +                         # wrong: transformation in lat/lon
+	tm_cartogram(size = "pop_est") +
+	tm_crs("+proj=robin")
+
+tmap_mode("view")
+
+
+tm1 = tm_shape(Africa, crs = "+proj=robin") +   # correct
+	tm_cartogram(size = "pop_est") +
+	tm_text("name", options = opt_tm_text(remove_overlap = TRUE)) +
+	tm_basemap(NULL)
+
+tm2 = tm_shape(Africa, crs = "+proj=robin") +   # correct
+	tm_polygons() +
+	tm_text("name", options = opt_tm_text(remove_overlap = TRUE)) +
+	tm_basemap(NULL)
+tmap_arrange(tm1, tm2, sync = TRUE)
+
+# An interactive Dorling cartogram
+tm_shape(World, crs = "+proj=robin") +
+	tm_cartogram_dorling(
+		hover = "name",
+		size = "pop_est",
+		fill = "press",
+		fill.scale = tm_scale_continuous(values = "cols4all.pu_gn_div", midpoint = 50),
+		fill.legend = tm_legend("", height = 30)) +
+	tm_title("World Press Freedom Index") +
+	tm_basemap(NULL)
+
+tmap_mode("plot")
+
+tm_shape(NLD_muni) +
+	tm_cartogram(size = "population")
+
+tm_shape(World) +
+	tm_cartogram(size = "pop_est")
