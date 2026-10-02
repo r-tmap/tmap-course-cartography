@@ -73,7 +73,7 @@ Day 3 (Friday 2nd of October)
 12. Basemaps and final map design [Slides](https://10mapz.com/tmap_course_cartography/session_12_basemaps_design.html)
 
 [Day 3 exercises](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day3.html)
-<!-- [Day 3 solutions](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day3_solutions.html) -->
+[Day 3 solutions](https://10mapz.com/tmap_course_cartography/tmap_course_cartography_ex_day3_solutions.html)
 
 
 ## Requirements
